@@ -17,8 +17,6 @@ import (
 var safetyNetAttestationKey = "android-safetynet"
 
 func init() {
-	jwt.DecodeStrict = true
-
 	RegisterAttestationFormat(safetyNetAttestationKey, verifySafetyNetFormat)
 }
 
